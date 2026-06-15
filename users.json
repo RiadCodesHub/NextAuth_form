@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1781417857986",
+    "email": "riadhossain75599@gmail.com",
+    "username": "arian",
+    "password": "$2b$10$bgQm9grTx5dqsZ.8E4hYWeiUHaixI3J55YdIoBqkuPnV2coy1DPRa",
+    "fullName": "Riad",
+    "age": 25,
+    "phoneNumber": "01778017982",
+    "address": {
+      "street": "1096 Nahid Villa",
+      "city": "Dhaka",
+      "country": "Bangladesh",
+      "zipCode": "1212"
+    },
+    "newsletter": true,
+    "createdAt": "2026-06-14T06:17:37.986Z"
+  },
+  {
+    "id": "1781553143190",
+    "email": "riad75599@gmail.com",
+    "username": "Riad",
+    "password": "$2b$10$njSCx8Bd5bXqgJrJVz5HWu3mO6541UD4ak1Yph6wM2XNpBIpPiGZS",
+    "fullName": "Riad",
+    "age": 26,
+    "phoneNumber": "01778017982",
+    "address": {
+      "street": "1096 Nahid Villa",
+      "city": "Dhaka",
+      "country": "Bangladesh",
+      "zipCode": "1212"
+    },
+    "newsletter": true,
+    "termsAccepted": true,
+    "createdAt": "2026-06-15T19:52:23.191Z"
+  }
+]
