@@ -8,9 +8,8 @@ import LoginPage from './login/page';
 
 export default function Home() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [userName, setUserName] = useState('');
+  const [username, setUsername] = useState('');
 
-  // Check authentication status on component mount
   useEffect(() => {
     const token = localStorage.getItem('authToken');
     const user = localStorage.getItem('user');
@@ -20,7 +19,7 @@ export default function Home() {
       if (new Date(sessionExpiry) > new Date()) {
         setIsAuthenticated(true);
         const userData = JSON.parse(user);
-        setUserName(userData.userName);
+        setUsername(userData.username);
       } else {
         localStorage.removeItem('authToken');
         localStorage.removeItem('user');
@@ -47,14 +46,13 @@ export default function Home() {
           </h1>
           <p className="text-xl text-white/80">
             {isAuthenticated 
-              ? `Welcome back, ${userName}!` 
+              ? `Welcome back, ${username}!` 
               : "Join us and start your journey today"}
           </p>
         </motion.div>
 
-        {/* Conditional Rendering based on Auth Status */}
+
         {!isAuthenticated ? (
-          // Show Registration Form for non-authenticated users
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
